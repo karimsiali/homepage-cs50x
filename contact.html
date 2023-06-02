@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Europa Universalis IV - Contact</title>
+    </head>
+    <body class="body-contact">    
+        <header id="header-contact">          
+            <a href="https://www.paradoxinteractive.com/games/europa-universalis-iv/" target="_blank"><img src="images/eu4 logo.png" alt="eu4 logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="about.html">About The Game</a></li>
+                    <li><a href="campaigns.html">My Campaigns</a></li>
+                    <li><a href="contact.html" class="active-page">Play With Me</a></li>
+                </ul>
+            </div>
+            <a href="https://www.paradoxinteractive.com/" target="_blank"><img src="https://www.paradoxinteractive.com/images/logo/logo-platypus-white.svg" alt="Paradox Interactive logo"></a>
+        </header>
+        <main id="main-contact">
+            <div class="front-contact">
+                <h1 class="h1-contact">Let's Play</h1>
+                <p class="sub-h1-contact">If you like this game, or want to start playing, fill out the form below and I will contact you as soon as I can.</p>
+            </div>
+            <div class="form">
+                <form action="/contact.html" name="contact-info">
+                    <p class="sub-form">Please fill out this form with you informations and I will contact you soon.</p>
+                    <fieldset class="fieldset">
+                        <label for="name">Name: <input type="text" id="name" name="name" placeholder="John Doe" required /></label>
+                        <label for="email">E-mail: <input type="email" id="email" name="email" placeholder="email@example.com" /></label>
+                        <label for="discord">Discord: <input type="text" id="discord" name="discord" placeholder="user#0000" required /></label>
+                        <label for="phone">Phone: <input type="number" id="phone" name="phone" placeholder="+1 (650) 251-53-21" /></label>
+                        <label for="client">On which client do you own your copy of the game?
+                            <select name="client" id="client">
+                                <option value="">(Select One)</option>
+                                <option value="1">Steam</option>
+                                <option value="2">Epic Games</option>
+                                <option value="3">Other</option>
+                            </select>
+                        </label>
+                        <label for="more-info">Tell me more about yourself: 
+                            <textarea name="more-info" id="more-info" cols="50" rows="3" placeholder="I've played for over 300 hours and I'm looking for someone to play with online..."></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary btn-lg"    >Send</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer id="footer-contact">
+            <p>This page was made for CS50x.</p>
+        </footer>        
+    </body>
+</html>
